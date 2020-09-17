@@ -1,0 +1,143 @@
+{
+  "main": {
+    "name": "Deepak Kumar Dash",
+    "occupation": "ReactJS Developer ",
+    "description": "Full Stack React Developer by Day, Freelancer by Night.",
+    "image": "deepak.jpg",
+    "bio": "My name is Deepak, I'm a Full Stack ReactJS Developer. Currently I'm working at Appstone while also studying ",
+    "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
+    "email": "deepakkumardash313@gmail.com",
+    "phone": "+917008695909",
+    "address": {
+      "street": "Baleshwar",
+      "city": "India",
+      "state": "Odisha",
+      "zip": "756045"
+    },
+    "website": "http://www.timbakerdev.com",
+    "resumedownload": "https://drive.google.com/drive/u/0/folders/1GRrPfJ6re1CEgF6c0cwYzZHSZDDTUxBi",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/deepak.dash.529/",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/deepak-kumar-dash-14a293176/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/deepakkumar_1998/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/dpak1999",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Hey I am full head into website development with knowledge of React JS and Database technologies like MongoDB.",
+    "education": [
+      {
+        "school": "GIET University",
+        "degree": "Bachelor's in Technology (Computer Science)",
+        "graduated": "Still to come",
+        "description": "Ongoing"
+      }
+    ],
+    "work": [
+      {
+        "company": "Appstone Pvt Ltd",
+        "title": "Team Member && React Specialist",
+        "years": "June 2020 - Present",
+        "description": "Delivering deployment ready projects to client"
+      },
+      {
+        "company": "Woovly",
+        "title": "Content specialist",
+        "years": "Nov 2018 - October 2019",
+        "description": "Creative Writing, Technical Descriptions, Blogging"
+      }
+    ],
+    "skills": [
+      {
+        "name": "ReactJs",
+        "level": "85%"
+      },
+      {
+        "name": "Node JS",
+        "level": "95%"
+      },
+      {
+        "name": "Git",
+        "level": "75%"
+      },
+      {
+        "name": "Figma && Adobe XD",
+        "level": "55%"
+      },
+      {
+        "name": "HTML5",
+        "level": "100%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "80%"
+      },
+      {
+        "name": "CSS3",
+        "level": "70%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "MERN Stack WhatsApp Clone",
+        "category": "WhatsApp Clone built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS)",
+        "image": "whatsapp-mern.jpeg",
+        "url": ""
+      },
+      {
+        "title": "MERN Stack TikTok Clone",
+        "category": "TikTok Clone built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS)",
+        "image": "tiktok-mern.jpeg",
+        "url": ""
+      },
+      {
+        "title": "Facebook Clone with React",
+        "category": "Facebook Clone built with ReactJS",
+        "image": "facebook-clone.png",
+        "url": ""
+      },
+      {
+        "title": "Airbnb Clone",
+        "category": "Facebook Clone built with ReactJS",
+        "image": "airbnb-clone.jpeg",
+        "url": ""
+      },
+      {
+        "title": "Netflix Clone",
+        "category": "Facebook Clone built with ReactJS",
+        "image": "netflix-clone.jpeg",
+        "url": ""
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Deepak has worked under me for quite a few months and to say his dedication level is always high completes the task taken diligently and would highly reccomend him.",
+        "user": "Aarohi Bhide(Woovly)"
+      },
+      {
+        "text": "Deepak must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "user": "Akash gautam(CEO, Appstone)"
+      }
+    ]
+  }
+}

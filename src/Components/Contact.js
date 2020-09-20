@@ -9,14 +9,8 @@ const Contact = ({ data }) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  console.log(data);
-
-  const handleClick = (e) => {
+  const submitForm = (e) => {
     e.preventDefault();
-    const senderEmail = "deepakkumardash313@gmail.com";
-    window.open(
-      `mailto:${senderEmail}?subject=${subject}&body=${name}: ${message}`
-    );
   };
 
   return (
@@ -35,7 +29,13 @@ const Contact = ({ data }) => {
 
       <div className="row">
         <div className="eight columns">
-          <form id="contactForm" name="contactForm">
+          <form
+            onSubmit={submitForm}
+            id="contactForm"
+            name="contactForm"
+            method="POST"
+            action="https://formspree.io/mwkwkpgo"
+          >
             <fieldset>
               <div>
                 <label htmlFor="contactName">
@@ -95,7 +95,7 @@ const Contact = ({ data }) => {
               </div>
 
               <div>
-                <button type="submit" onClick={handleClick} className="submit">
+                <button type="submit" className="submit">
                   Submit
                 </button>
                 <span id="image-loader">

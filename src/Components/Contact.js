@@ -13,8 +13,9 @@ const Contact = ({ data }) => {
 
   const handleClick = (e) => {
     e.preventDefault();
+    const senderEmail = "deepakkumardash313@gmail.com";
     window.open(
-      `mailto:deepakkumardash313@gmail.com?subject=${subject}&body=${name}: ${message}`
+      `mailto:${senderEmail}?subject=${subject}&body=${name}: ${message}`
     );
   };
 

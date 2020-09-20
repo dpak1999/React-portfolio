@@ -2,30 +2,16 @@ import React, { useState } from "react";
 
 const Contact = ({ data }) => {
   const [url, setUrl] = useState();
+  // "mailto:deepakkumardash313@gmail.com?subject=subject&body=body"
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const myMail = "deepakkumardash313@gmail.com";
 
-  const submitForm = (e) => {
+  const handleClick = (e) => {
     e.preventDefault();
-    const form = e.target;
-    const data = new FormData(form);
-    const xhr = new XMLHttpRequest();
-    xhr.open(form.method, form.action);
-    xhr.setRequestHeader("Accept", "application/json");
-
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState !== XMLHttpRequest.DONE) return;
-      if (xhr.status === 200) {
-        form.reset();
-        this.setState({ status: "SUCCESS" });
-      } else {
-        this.setState({ status: "ERROR" });
-      }
-    };
-
-    xhr.send(data);
+    window.open(`mailto:${myMail}?subject=${subject}&body=${name}: ${message}`);
   };
 
   return (
@@ -44,13 +30,7 @@ const Contact = ({ data }) => {
 
       <div className="row">
         <div className="eight columns">
-          <form
-            onSubmit={submitForm}
-            id="contactForm"
-            name="contactForm"
-            method="POST"
-            action="https://formspree.io/mwkwkpgo"
-          >
+          <form id="contactForm" name="contactForm">
             <fieldset>
               <div>
                 <label htmlFor="contactName">
@@ -110,7 +90,7 @@ const Contact = ({ data }) => {
               </div>
 
               <div>
-                <button type="submit" className="submit">
+                <button type="submit" onClick={handleClick} className="submit">
                   Submit
                 </button>
                 <span id="image-loader">

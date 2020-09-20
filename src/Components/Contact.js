@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
 const Contact = ({ data }) => {
-  const [url, setUrl] = useState(
-    "mailto:deepakkumardash313@gmail.com?subject=subject&body=body"
-  );
+  const [url, setUrl] = useState();
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
@@ -11,6 +9,23 @@ const Contact = ({ data }) => {
 
   const submitForm = (e) => {
     e.preventDefault();
+    const form = e.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+
+    xhr.send(data);
   };
 
   return (

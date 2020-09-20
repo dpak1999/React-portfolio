@@ -2,16 +2,18 @@ import React, { useState } from "react";
 
 const Contact = ({ data }) => {
   const [url, setUrl] = useState();
-  // "mailto:deepakkumardash313@gmail.com?subject=subject&body=body"
+  // `mailto:deepakkumardash313@gmail.com?subject=subject&body=body`
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const myMail = "deepakkumardash313@gmail.com";
+  const myMail = "dpak.portfolio.1998@gmail.com";
 
   const handleClick = (e) => {
     e.preventDefault();
-    window.open(`mailto:${myMail}?subject=${subject}&body=${name}: ${message}`);
+    window.open(
+      `mailto:${myMail}?subject=${subject}&body=Name-${name} ${message}`
+    );
   };
 
   return (

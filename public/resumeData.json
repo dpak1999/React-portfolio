@@ -51,12 +51,6 @@
     ],
     "work": [
       {
-        "company": "Appstone Pvt Ltd",
-        "title": "Team Member && React Specialist",
-        "years": "June 2020 - Present",
-        "description": "Delivering deployment ready projects to client"
-      },
-      {
         "company": "Woovly",
         "title": "Content specialist",
         "years": "Nov 2018 - October 2019",
@@ -97,10 +91,10 @@
   "portfolio": {
     "projects": [
       {
-        "title": "MERN Stack WhatsApp Clone",
-        "category": "WhatsApp Clone built with MERN (MongoDB, ExpressJS, ReactJS, NodeJS)",
-        "image": "whatsapp-mern.jpeg",
-        "url": ""
+        "title": "React Covid-19 Tracker",
+        "category": "A covid-19 tracker app using react,leaflet and firebase",
+        "image": "covid-tracker.jpg",
+        "url": "https://dpak-covid-tracker.web.app/"
       },
       {
         "title": "MERN Stack TikTok Clone",
@@ -136,7 +130,7 @@
       },
       {
         "text": "Deepak must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user": "Akash gautam(CEO, Appstone)"
+        "user": "Sonny Sangha"
       }
     ]
   }
